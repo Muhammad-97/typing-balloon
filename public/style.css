@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.start-page,
+.level-selection,
+.game-page {
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.letter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: letterMove 2s linear infinite;
+}
+
+/* .game-page,
+.game-info {
+  height: 100vh;
+} */
+
+#gameOverPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  z-index: 1000;
+}
+
+

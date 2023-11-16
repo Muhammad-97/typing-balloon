@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Balloon Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="start-page">
+    <h1>Typing Balloon Game</h1>
+    <button onclick="showLevels()">Start Game</button>
+  </div>
+
+  <div class="level-selection" style="display: none;">
+    <h2>Select Level</h2>
+    <button onclick="selectLevel('beginner')">Beginner</button>
+    <button onclick="selectLevel('medium')">Medium</button>
+    <button onclick="selectLevel('hard')">Hard</button>
+  </div>
+
+  <div class="game-page" style="display: none;">
+    <div class="game-info">
+      <h2>Level: <span id="level"></span></h2>
+      <h2>Score: <span id="score">0</span></h2>
+      <h2>Time: <span id="timer">0</span></h2>
+    </div>
+    <div class="game-container">
+      <div id="letters" class="letters"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
